@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    image: node:18.19.0
+    container_name: nuxt-app
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    ports:
+      - "3000:3000"
+    tty: true
